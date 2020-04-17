@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>08.a元素的伪类</title>
+    <style>
+        /* :link 用来表示没有访问过的链接（正常的链接） */
+        a:link {
+            color: yellowgreen;
+            font-size: 36px;
+        }
+
+        a:visited {
+            color: fuchsia;
+        }
+
+        /* :hover 表示鼠标移入的状态 */
+        a:hover {
+            color: purple;
+            font-size: 30px;
+        }
+
+        a:active {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://www.baidu.com">百度一下，你就知道</a>
+    <br />
+    <a href="https://www.baidu123.com">百度123</a>
+</body>
+
+</html>
