@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>09.伪元素选择器</title>
+    <style>
+        /* 实现首次字下沉突出的效果 */
+        /* span {
+            font-size: 36px;
+        } */
+
+        p::first-letter {
+            font-size: 36px;
+        }
+
+        p::first-line {
+            background-color: yellow;
+        }
+
+        p::selection {
+            color: gold;
+            background-color: red;
+        }
+
+        p::before {
+            content: "『";
+        }
+
+        p::after {
+            content: "』";
+        }
+
+        span {
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- P36 -->
+    <!-- <p> <span>L</span>orem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid aspernatur rerum temporibus,
+        facilis vitae
+        doloribus! Similique numquam voluptate nesciunt quam cum molestias itaque veritatis totam, dolore repudiandae
+        pariatur nihil aliquam!</p> -->
+    <p>伪元素，表示页面中一些特殊的并不真实的存在的元素（特殊的位置）<br />
+        伪元素使用 :: 开头<br />
+        ::first-letter 表示第一个字母<br />
+        ::first-line 表示第一行<br />
+        ::selection 表示鼠标选中的内容<br />
+        ::before 元素的开始<br />
+        ::after 元素的最后<br />
+        <span>- before 和 after 必须结合content属性来使用</span> </p>
+</body>
+
+</html>
