@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>导航栏的简单实现</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .nav {
+            list-style: none;
+            /* 去除无序列表的每条记录的标识 */
+
+        }
+
+        ul {
+            width: 90%;
+            height: 2rem;
+            background-color: #802356;
+            overflow: hidden;
+            margin: 20px auto;/* 元素水平居中 */
+        }
+
+        li {
+            float: left;
+            width: 25%;
+            /* border: white 1px solid; */
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 5px 0;
+            /* 增加内边距，将li元素的高度撑起来，li元素已经设置漂浮，其高度只能通过子元素来撑起来 */
+            text-align: center;
+            display: block;/* 设置成块元素之后,可以设置宽高,将漂浮的块元素li撑起来*/
+            width: 100%;
+        }
+
+        .nav li a:hover {
+            background-color: deepskyblue;
+            /*设置整个元素的背景 */
+            color: darkred;
+            /*设置的是标签内容(这里是文字)的颜色 */
+        }
+
+        p::first-letter {
+            font-size: 36px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <ul class="nav">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">新闻</a></li>
+            <li><a href="#">联系</a></li>
+            <li><a href="#">关于</a></li>
+        </ul>
+    </div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error perferendis cum nulla
+        voluptatem culpa sed fugit rerum recusandae omnis eum esse quae assumenda iusto distinctio autem asperiores,
+        doloribus eligendi iste.</p>
+</body>
+
+</html>
