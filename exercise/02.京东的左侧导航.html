@@ -8,29 +8,50 @@
     <title>02.京东的左侧导航</title>
     <link rel="stylesheet" href="./css/reset.css">
     <style>
-        body{
+        /* 设置整个网页背景方便查看 */
+        body {
             background-color: #bfa;
         }
-        .left-nav{
-            width: 160px;
-            margin: auto;
-            background-color: cornsilk;
-            padding: 10px;
-        }
-        .left-nav .item:hover{
-            width: 100%;
-            background-color:red;
+
+        .left-nav {
+            /* margin和width实现水平居中：容器上定义一个固定的宽度，然后配合margin左右的值为auto。 */
+            width: 190px;
+            height: 450px;
+            padding: 10px 0;
+            background-color: white;
+            margin: 60px auto;
         }
 
-        .item{
+        nav div.item {
+            /* 要让文字在父元素中垂直居中，只需将父元素的line-height设置为一个和父元素height一样的值 */
+            height: 25px;
+            line-height: 25px;
+            /* 虽然设置padding会让盒子变大，但没有设置宽度，宽度是auto,s所以盒子还是原来的大小 */
+            padding-left: 10px;
+            font-size: 12px;
+        }
 
+        nav div.item:hover{
+            background-color: #d9d9d9;
+        }
+        .item a{
+            font-size: 16px;
+            color: #333333;
+            /* 去掉超链接下划线 */
+            text-decoration: none;
+        }
+        .item .line{
+            padding: 0 2px;
+        }
+        a:hover{
+            color: red;
         }
 
     </style>
 </head>
 
 <body>
-
+    <!-- P56 -->
     <!-- 创建一个外部的容器 nav(div) div(div) ul(li)  -->
     <nav class="left-nav">
         <div class="item">

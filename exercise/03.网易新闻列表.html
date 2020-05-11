@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03.网易新闻列表</title>
+    <link rel="stylesheet" href="../03_layout/css/reset.css">
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+        .news-wrapper {
+            width: 300px;
+            height: 357px;
+            border-top: 1px solid #dddddd;
+            margin: 50px auto;
+        }
+
+        .news-title {
+            display: inline-block;
+            height: 30px;
+            border-top: 1px solid red;
+            margin-top: -1px;
+            padding-top: 10px;
+
+        }
+
+        .news-title a {
+            font-weight: bold;
+            color: rgb(17, 16, 16);
+        }
+
+        .news-img {
+            height: 150px;
+        }
+
+        .news-img h3 {
+            margin-top: -30px;
+            padding-left: 30px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .news-list {
+            margin-top: 20px;
+        }
+
+        .news-list li {
+            margin-bottom: 17px;
+        }
+
+        /* 通过before伪元素，来为每一个li添加项目符号 */
+        .news-list li::before {
+            content: '■';
+            color: rgb(218, 218, 218);
+            font-size: 12px;
+            margin-right: 4px;
+        }
+
+        .news-list a {
+            font-size: 14px;
+            color: #666666;
+        }
+
+        /* .news-list li::before {
+            content: '■';
+            color: #928d8d;
+            font-size: 12px;
+            margin-right: 4px;
+        } */
+
+
+
+        .news-list a:hover {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="news-wrapper">
+
+        <h2 class="news-title">
+            <a href="#">体育</a>
+        </h2>
+
+        <div class="news-img">
+            <a href="#">
+                <img src="../exercise/img/03/1.jpeg" alt="费德勒">
+                <h3>
+                    费德勒首负迪米 扶额头不满发挥
+                </h3>
+            </a>
+        </div>
+
+        <ul class="news-list">
+            <li>
+                <a href="#">乔治:我爱LA 喜欢和LBJ一起打球</a>
+            </li>
+            <li>
+                <a href="#">格林:3年前降薪就在等KD 特制T恤嘲讽LBJ</a>
+            </li>
+            <li>
+                <a href="#">塔克4000双鞋让保罗羡慕嫉妒 乔丹被震惊</a>
+            </li>
+            <li>
+                <a href="#">CBA下季新赛制:常规赛4组循环 增至46轮</a>
+            </li>
+        </ul>
+
+
+    </div>
+</body>
+
+</html>
